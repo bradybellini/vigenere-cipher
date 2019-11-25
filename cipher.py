@@ -2,18 +2,12 @@
 # I certify this is my own work
 
 import string
-import math
 
 alphabet = list(string.ascii_lowercase)
 
 message = 'Screw you Zeus, I hate scorpions!'
 
 keyword = 'ORION'
-
-# def keyleng(key, msg):
-#     if len(keyword) == len(msg):
-#         return key
-#     else
 
 def encode():
     mesg_list = []
@@ -37,7 +31,7 @@ def encode():
     print(''.join(str(i) for i in cipher))
     return ''.join(str(i) for i in cipher)        
 
-def decode(cipher, key):
+def decode(cipher):
     og = []
     enc = []
     keyw = []
@@ -56,5 +50,5 @@ def decode(cipher, key):
 
 
 if __name__ == "__main__":
-    print(decode(encode(), keyword))
+    print(decode(encode()))
 
